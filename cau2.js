@@ -16,7 +16,7 @@ for(let i=1;i<=50;i++){
 let count=0;
 for(let j=1;j<=50;j++){
     if(j%3===0 && j%5!==0){
-        count++;
+        count+=j;
     }
 }
 

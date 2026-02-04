@@ -1,8 +1,12 @@
 let studentName="Quý, Nam, Lan, Hùng, Nam";
 let studentArray=studentName.split(", ");
+console.log("Mảng sau khi chuyển từ chuỗi sang mảng:");
+
 console.log(studentArray);
 
 let studentReverse=studentArray.reverse();
+console.log("Mảng sau khi đảo ngược:");
+
 console.log(studentReverse);
 // có thay đổi mảng gốc
 

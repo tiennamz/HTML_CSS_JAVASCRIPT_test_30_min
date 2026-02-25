@@ -27,8 +27,8 @@ mixArray(orders,revenues)
 
 let total1=0;
 for(let i=0;i<total.length;i++){
-    total+=Number()
-    console.log();
+    total1+=Number(total[i])
+    
     
 }
 console.log(total1);

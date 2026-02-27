@@ -17,6 +17,7 @@ const findItemById=(id,itemArray)=>{
         return resultFind
     }
 }
+console.log("Toàn bộ dữ liệu của mặt hàng mang mã định danh PP03:");
 
 console.log(findItemById("P03",products));
 
@@ -31,6 +32,7 @@ let checkPrice=(itemArray)=>{
         console.log("Phát hiện sản phẩm chưa cập nhật giá")
     }
 }
+
 checkPrice(products)
 
 // 
@@ -45,5 +47,7 @@ const displayProduct=(itemArray)=>{
     }) 
     return catalogDisplay
 }
+console.log("Dữ liệu sau khi được chuyển hóa là:");
+
 console.log(displayProduct(products));
 

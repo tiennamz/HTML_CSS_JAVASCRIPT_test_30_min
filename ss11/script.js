@@ -26,9 +26,9 @@ let checkPrice=(itemArray)=>{
         return el.price>0
     })
     if(resultCheck==true){
-        alert("Dữ liệu bảng giá hợp lệ")
+        console.log("Dữ liệu bảng giá hợp lệ")
     }else{
-        alert("Phát hiện sản phẩm chưa cập nhật giá")
+        console.log("Phát hiện sản phẩm chưa cập nhật giá")
     }
 }
 checkPrice(products)

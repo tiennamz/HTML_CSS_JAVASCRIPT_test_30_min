@@ -11,7 +11,7 @@ const filterProduct=(arrayPorduct)=>{
         return el.inStock==true
     })
     let resultSort=arrayFilter.toSorted((el1,el2)=>{
-        return el2-el1
+        return el2.price-el1.price
     })
     let displayArray=resultSort.map((el)=>{
         return `${el.id} - ${el.name} - ${el.price}$ - category:${el.category} - instock: ${el.inStock}`

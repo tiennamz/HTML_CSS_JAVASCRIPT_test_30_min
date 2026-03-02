@@ -20,7 +20,6 @@ const filterProduct=(arrayPorduct)=>{
     
 }
 console.log("Yeu cau 1:");
-
 filterProduct(products)
 
 // 
@@ -35,11 +34,11 @@ const findCategory=(arrayPorduct)=>{
     if(resultSearch.length==0){
         alert("Khong tim thay")
     }else{
+        console.log(`Cac san pham co phu kien la "${categorySearch}":`);
         console.log(nameOfProduct);
     }
 }
 console.log("Yeu cau 2:");
-
 findCategory(products)
 // 
 const totalPrice=(arrayPorduct)=>{

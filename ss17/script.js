@@ -78,10 +78,10 @@ let buttonAdd=document.getElementsByClassName("btn-add")[0]
            let validName=true
             if(!inputName.value){
                 alert("Họ tên không được để trống!")
-                validName==false
+                validName=false
             }else if(inputName.value.trim().includes(" ")==false){
                 alert("Họ tên phải có ít nhất 2 ký tự!")
-                validName==false
+                validName=false
             }
 
         // Validation cho Số điện thoại
@@ -95,10 +95,10 @@ let buttonAdd=document.getElementsByClassName("btn-add")[0]
             let validPhone=true
             if(!inputPhone.value){
                 alert("Số điện thoại không được để trống!")
-                validPhone==false
+                validPhone=false
             }else if(hasPhone(inputPhone.value)==false){
                 alert("Số điện thoại không hợp lệ! Vui lòng nhập số điện thoại 10 chữ số (bắt đầu bằng 0) hoặc định dạng quốc tế (+84...)")
-                validPhone==false
+                validPhone=false
             }
         // Validation cho Email
         // Không được để trống
@@ -113,10 +113,13 @@ let buttonAdd=document.getElementsByClassName("btn-add")[0]
             let validEmail=true
             if(!inputEmail.value){
                 alert("Email không được để trống!")
+                validEmail=false
             }else if(!hasEmail(inputEmail.value)){
+                validEmail=false
                 alert("Email không hợp lệ!")
             }
-            if(validPhone=true && validName==true && validEmail==true){
+
+            if(validPhone==true && validName==true && validEmail==true){
                 let obj={
                     id: idOrigin,
                     name: inputName.value,
@@ -124,10 +127,12 @@ let buttonAdd=document.getElementsByClassName("btn-add")[0]
                     phone: inputPhone.value
                 }
                 arrayStudent.push(obj)
+                alert("Thêm liên hệ thành công!")
+                inputEmail.value=""
+                inputName.value=""
+                inputPhone.value=""
                 render()
             }
-
-
     }
 
 buttonAdd.addEventListener("click",(e)=>{

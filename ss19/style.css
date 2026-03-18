@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300;
+    height: 500px;
+    background-color: rgb(105, 105, 255);
+    color: #fff;
+    font-size: larger;
+
+}
+h1{
+    margin-bottom: 50px;
+}
+input{
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+    padding-top: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 100px;
+    background-color: rgb(177, 133, 76);
+    color: #fff;
+    transition: 0.5s;
+
+}
+button:hover{
+    color: aqua;
+    background-color:tomato;
+}
